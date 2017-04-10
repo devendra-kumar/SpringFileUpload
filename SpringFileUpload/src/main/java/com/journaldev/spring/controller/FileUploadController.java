@@ -26,6 +26,11 @@ public class FileUploadController {
 	public String uploadFile(){
 		return "upload";
 	}
+	
+	@RequestMapping(value="/uploadMultiple",method=RequestMethod.GET)
+	public String uploadMultiple(){
+		return "uploadMultiple";
+	}
 
 	/**
 	 * Upload single file using Spring Controller
@@ -86,8 +91,8 @@ public class FileUploadController {
 				byte[] bytes = file.getBytes();
 
 				// Creating the directory to store file
-				String rootPath = System.getProperty("catalina.home");
-				File dir = new File(rootPath + File.separator + "tmpFiles");
+				String rootPath = "/home/devendra/Test/Upload";
+				File dir = new File(rootPath);
 				if (!dir.exists())
 					dir.mkdirs();
 
