@@ -43,7 +43,7 @@ public class FileUploadController {
 		if (!file.isEmpty()) {
 			try {
 				byte[] bytes = file.getBytes();
-
+				//Below path should be changed based on configuration of OS
 				// Creating the directory to store file
 				String rootPath = "/home/devendra/Test/Upload";
 				//String userHome = System.getProperty( "user.home" );
@@ -89,7 +89,7 @@ public class FileUploadController {
 			String name = names[i];
 			try {
 				byte[] bytes = file.getBytes();
-
+				// Below path should be changed based on configuration of OS
 				// Creating the directory to store file
 				String rootPath = "/home/devendra/Test/Upload";
 				File dir = new File(rootPath);
