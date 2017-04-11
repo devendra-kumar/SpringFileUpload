@@ -1,4 +1,4 @@
-package com.journaldev.spring.controller;
+package com.springfileupload.controller;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -18,7 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Controller
 public class FileUploadController {
-
+		
 	private static final Logger logger = LoggerFactory
 			.getLogger(FileUploadController.class);
 	
